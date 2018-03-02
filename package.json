@@ -7,6 +7,9 @@
     "id": "org.nativescript.todons",
     "tns-ios": {
       "version": "3.4.1"
+    },
+    "tns-android": {
+      "version": "3.4.1"
     }
   },
   "scripts": {
@@ -32,10 +35,14 @@
   "devDependencies": {
     "@angular/compiler-cli": "~5.2.0",
     "@ngtools/webpack": "~1.9.4",
+    "babel-traverse": "6.26.0",
+    "babel-types": "6.26.0",
+    "babylon": "6.18.0",
     "codelyzer": "~4.1.0",
     "copy-webpack-plugin": "~4.3.0",
     "css-loader": "~0.28.7",
     "extract-text-webpack-plugin": "~3.0.2",
+    "lazy": "1.0.11",
     "nativescript-dev-typescript": "~0.6.0",
     "nativescript-dev-webpack": "~0.9.1",
     "nativescript-worker-loader": "~0.8.1",
