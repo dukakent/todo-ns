@@ -1,0 +1,12 @@
+<GridLayout rows="*" columns="*, auto">
+  <StackLayout row="0" col="1">
+    <Button #removeConfirmButton text="Remove" class="confirm-remove" (tap)="onRemoveConfirm()"></Button>
+  </StackLayout>
+  <StackLayout #swipable row="0" colSpan="2" col="0" orientation="horizontal" class="item-container" (swipe)="onSwipe($event)">
+    <GridLayout rows="*" columns="*, auto" verticalAlignment="center" class="item">
+      <Label col="0" row="0" [text]="todo.text" verticalAlignment="center" textWrap="true"></Label>
+      <Label col="1" row="1" text="✕" class="remove-button" *ngIf="!showRemoveConfirm" (tap)="swipeLeft()"></Label>
+      <Label col="1" row="1" text=">" class="remove-button" *ngIf="showRemoveConfirm" (tap)="swipeRight()"></Label>
+    </GridLayout>
+  </StackLayout>
+</GridLayout>

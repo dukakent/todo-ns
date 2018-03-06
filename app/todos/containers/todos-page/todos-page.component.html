@@ -1,0 +1,13 @@
+<FlexboxLayout flexDirection="column">
+  <ListView flexGrow="1" *ngIf="todos?.length" [items]="todos">
+    <ng-template let-todo="item">
+      <td-todo-item [todo]="todo" (remove)="removeTodo(todo)"></td-todo-item>
+    </ng-template>
+  </ListView>
+  <StackLayout flexGrow="1" verticalAlignment="center">
+    <label *ngIf="!todos || !todos.length" textAlignment="center" text="No todos yet :("></label>
+  </StackLayout>
+  <StackLayout class="create-todo-container">
+    <td-todo-input (create)="newTodo($event)"></td-todo-input>
+  </StackLayout>
+</FlexboxLayout>

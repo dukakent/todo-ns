@@ -118,15 +118,15 @@
       "check-type"
     ],
     "directive-selector": [
-      false,
+      true,
       "attribute",
-      "app",
+      "td",
       "camelCase"
     ],
     "component-selector": [
-      false,
+      true,
       "element",
-      "app",
+      "td",
       "kebab-case"
     ],
     "no-output-on-prefix": true,
