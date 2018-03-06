@@ -1,0 +1,10 @@
+<FlexboxLayout class="create-todo-container">
+  <TextField flexGrow="1"
+             hint="Create new todo..."
+             [(ngModel)]="typedText"
+             (focus)="onInputFocus()"
+             class="todo-input"
+             [class.invalid]="invalid"
+             (returnPress)="onNewTodo()"></TextField>
+  <Button marginLeft="20" text="New" (tap)="onNewTodo()"></Button>
+</FlexboxLayout>

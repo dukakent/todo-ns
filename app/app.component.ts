@@ -1,7 +1,12 @@
 import { Component } from '@angular/core';
+import { Page } from 'ui/page';
 
 @Component({
-  selector: 'ns-app',
-  templateUrl: 'app.component.html'
+  selector: 'td-app',
+  templateUrl: './app.component.html'
 })
-export class AppComponent { }
+export class AppComponent {
+  constructor(private page: Page) {
+    this.page.actionBarHidden = true;
+  }
+}

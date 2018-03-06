@@ -1,0 +1,11 @@
+.todo-input {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #ddd;
+}
+
+.todo-input.invalid {
+  color: red;
+  border-color: red;
+  placeholder-color: rgba(255, 0, 0, .5);
+}
