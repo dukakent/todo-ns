@@ -1,12 +1,8 @@
 import { Component } from '@angular/core';
-import { Page } from 'ui/page';
 
 @Component({
   selector: 'td-app',
-  templateUrl: './app.component.html'
+  templateUrl: './app.component.html',
+  moduleId: module.id
 })
-export class AppComponent {
-  constructor(private page: Page) {
-    this.page.actionBarHidden = true;
-  }
-}
+export class AppComponent {}
