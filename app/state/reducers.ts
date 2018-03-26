@@ -11,15 +11,9 @@ export const reducers: ActionReducerMap<AppState> = {
 
 export function logger(reducer: ActionReducer<AppState>): ActionReducer<AppState> {
   return function(state: AppState, action: Action): AppState {
-    console.log('');
-    console.log(action.type);
+    console.log('ACTION:', action.type);
 
-    const newState = reducer(state, action);
-
-    console.log(JSON.stringify(newState));
-    console.log('');
-
-    return newState;
+    return reducer(state, action);
   };
 }
 
